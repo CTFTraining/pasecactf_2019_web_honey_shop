@@ -6,5 +6,6 @@ services:
     image: ctftraining/pasecactf_2019_web_honey_shop
     environment:
       - WEB_CONCURRENCY=1
+      - FLAG=flag{test}
     ports:
       - "8345:5000"
