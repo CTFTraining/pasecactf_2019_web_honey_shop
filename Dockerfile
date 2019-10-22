@@ -1,5 +1,6 @@
 FROM python:alpine
 WORKDIR /
+ENV WEB_CONCURRENCY=1
 COPY ./app /app
 RUN pip install -r app/requirements.txt &&\
     mkdir /home/shop &&\
